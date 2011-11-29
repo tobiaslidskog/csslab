@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8"/>
 
   <!-- Set the viewport width to device width for mobile -->
-  <meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="width=device-width"/>
 
-  <title>CssLab - Foundation</title>
+  <title>CssLab - Foundation - Navigation</title>
 
   <!-- Included CSS Files -->
-  <link rel="stylesheet" href="foundation/stylesheets/foundation.css">
+  <link rel="stylesheet" href="lib/stylesheets/foundation.css">
   <link rel="stylesheet" href="stylesheets/app.css">
 
   <!--[if lt IE 9]>
-  <link rel="stylesheet" href="foundation/stylesheets/ie.css">
+  <link rel="stylesheet" href="lib/stylesheets/ie.css">
   <![endif]-->
 
 
@@ -32,53 +36,120 @@
 
 <!-- container -->
 <div class="container">
-
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="three columns">
+          <a href="index.html"><img src="http://placehold.it/164x43&text=Logo"></a>
+        </div>
+        <div class="nine columns">
+          <nav id="navMenu">
+            <strong>
+              <a href="grid.html">Grid</a>
+              <a href="scrolling.html">Scrolling</a>
+              <a href="tabs.html">Tabs</a>
+            </strong>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
   <div class="row">
     <div class="twelve columns">
-      <h2>CssLab - Trying out Foundation</h2>
-      <p>This is the start page for some Foundation experiments</p>
-
-      <hr />
+      <ol class="breadcrumbs">
+        <li><a href="#">First</a></li>
+        <li><a href="#">Second</a></li>
+        <li><a href="#">Third</a></li>
+      </ol>
     </div>
   </div>
 
   <div class="row">
-    <div class="eight columns">
-      <h3>The examples</h3>
-
-      <dl class="nice tabs vertical">
-        <dd><a href="index.html">Start page</a></dd>
-        <dd><a href="scrolling.html">Scrolling images</a></dd>
-        <dd><a href="grid.html">Grid</a></dd>
-        <dd><a href="tabs.html">Tabs</a></dd>
-        <dd><a href="navigation.html" class="active">Navigation</a></dd>
-      </dl>
+    <div class="nine columns">
+      <img src="http://placehold.it/600x200"><h2>Banner here</h2>
     </div>
-
-    <div class="four columns">
-      <h4>Other Resources</h4>
-      <p>To learn more about Foundation, check out the following links:</p>
-      <ul class="disc">
-        <li><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</li>
-        <li><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</li>
-        <li><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Follow Foundation on Twitter for the latest updates.</li>
+    <div class="three columns">
+      <img src="http://placehold.it/200x200"><h2>Sidebar here</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="twelve columns">
+      <ul class="block-grid mobile four-up">
+        <li><img src="http://placehold.it/225"><span class="desc"><h2>Item 1</h2><div>some text</div></span></li>
+        <li><img src="http://placehold.it/225"><span class="desc"><h2>Item 2</h2><div>some text</div></span></li>
+        <li><img src="http://placehold.it/225"><span class="desc"><h2>Item 3</h2><div>some text</div></span></li>
+        <li><img src="http://placehold.it/225"><span class="desc"><h2>Item 4</h2><div>some text</div></span></li>
+        <li><img src="http://placehold.it/225"><span class="desc"><h2>Item 5</h2><div>some text</div></span></li>
+        <li><img src="http://placehold.it/225"><span class="desc"><h2>Item 6</h2><div>some text</div></span></li>
+        <li><img src="http://placehold.it/225"><span class="desc"><h2>Item 7</h2><div>some text</div></span></li>
+        <li><img src="http://placehold.it/225"><span class="desc"><h2>Item 8</h2><div>some text</div></span></li>
+        <li><img src="http://placehold.it/225"><span class="desc"><h2>Item 9</h2><div>some text</div></span></li>
+        <li><img src="http://placehold.it/225"><span class="desc"><h2>Item 10</h2><div>some text</div></span></li>
       </ul>
     </div>
   </div>
-  <div class="row">
-    <div class="twelve columns">
-      TODO add navigation examples here...
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="four columns">
+          <nav>
+            <h5>First column</h5>
+            <ul class="block-grid two-up">
+              <li><a href="#">Lorem sdfsdf&nbsp;›</a></li>
+              <li><a href="#">Ipsum asdf&nbsp;›</a></li>
+              <li><a href="#">Lorem asdfs&nbsp;›</a></li>
+              <li><a href="#">Ipsum&nbsp;›</a></li>
+              <li><a href="#">Lorem asdf&nbsp;›</a></li>
+              <li><a href="#">Ipsum asdggf&nbsp;›</a></li>
+              <li><a href="#">Lorem&nbsp;›</a></li>
+              <li><a href="#">Ipsum asfgfsg&nbsp;›</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="four columns">
+          <nav>
+            <h5>Second column</h5>
+            <ul class="block-grid two-up">
+              <li><a href="#">Lorem sdfggsf&nbsp;›</a></li>
+              <li><a href="#">Ipsum&nbsp;›</a></li>
+              <li><a href="#">Lorem sfdg sfdg&nbsp;›</a></li>
+              <li><a href="#">Ipsum sf&nbsp;›</a></li>
+              <li><a href="#">Lorem&nbsp;›</a></li>
+              <li><a href="#">Ipsum sdfggsdf sdf&nbsp;›</a></li>
+              <li><a href="#">Lorem&nbsp;›</a></li>
+              <li><a href="#">Ipsum sf&nbsp;›</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="two columns">
+          <nav>
+            <h5>Third column</h5>
+            <ul>
+              <li><a href="#">Lorem dfgs f</a></li>
+              <li><a href="#">Ipsum sfg ff</a></li>
+              <li><a href="#">Lorem sfg sf</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="two columns">
+          <nav>
+            <h5>Fourth column</h5>
+            <ul>
+              <li><a href="#">Lorem tr</a></li>
+              <li><a href="#">Ipsum etre</a></li>
+              <li><a href="#">Lorem cncn</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </div>
-  </div>
-
+  </footer>
 </div>
 <!-- container -->
 
 
-
-
 <!-- Included JS Files -->
-<script src="foundation/javascripts/foundation.js"></script>
+<script src="lib/javascripts/foundation.js"></script>
 <script src="javascripts/app.js"></script>
 
 </body>

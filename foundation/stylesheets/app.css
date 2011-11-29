@@ -13,9 +13,32 @@
    Shared Styles
 ----------------------------------------- */
 
+#navMenu strong a {
+  line-height: 18px;
+  font-weight: 500;
+  padding-right: 12px;
+}
 
+.breadcrumbs {
+  list-style: none;
+}
 
+.breadcrumbs li {
+  float: left;
+  margin-right: 10px;
+}
 
+.breadcrumbs li :after {
+  content: " >"
+}
+
+footer {
+  background-color: #669999;
+}
+
+footer h5, footer a {
+  color: white;
+}
 
 /* -----------------------------------------
    Scrolling images
@@ -64,7 +87,10 @@
 
 
 /* -----------------------------------------
-   Page Name 2
+   Navigation
 ----------------------------------------- */
 
+.desc {
+  text-align: center
+}
 
