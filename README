@@ -1,0 +1,9 @@
+CSSLAB - sandbox project for css frameworks
+- - - - - - - - - - - - - - - - - - - - - -
+
+This project exists as a playground for trying out and evaluating different css frameworks.
+Ease of use, clear path for extensions and possibility to create responsive web designs (one site suitable for smart phone, tablet and desktop) are important parameters.
+
+Evaluated frameworks are (each in their own subdirectory):
+* Bootstrap - https://github.com/twitter/bootstrap
+* Foundation - https://github.com/zurb/foundation

@@ -1,0 +1,70 @@
+/* Application specific styling */
+
+/* --------------------------------------------------
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Page Name 1
+:: Page Name 2
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+
+
+
+
+
+/* -----------------------------------------
+   Scrolling images
+----------------------------------------- */
+
+#orbitDemo .content {
+  background: url(../images/beach.jpg);
+}
+#orbitDemo .content h1 {
+  font-family: 'Helvetica', 'Arial', serif;
+  color: #2f260f;
+  font-weight: bold !important;
+  text-transform: uppercase;
+  text-shadow:
+    1px 1px 0 #f8f0d1,
+    2px 2px 0 #f8f0d1,
+    3px 3px 0 #1a5774;
+  text-align: center;
+  margin-top: 15%;
+}
+#orbitDemo .content h3 {
+  font-family: 'Helvetica', 'Arial', serif;
+  color: #7f6b37;
+  font-weight: bold !important;
+  text-align: center;
+}
+
+#orbitDemo { background: url(../images/spinner.gif) no-repeat center center #000; height: 305px; margin-bottom: 20px; }
+#orbitDemo.orbit { height: auto; }
+#orbitDemo img, #orbitDemo div { display: none; }
+#orbitDemo.orbit img, #orbitDemo.orbit div { display: block; }
+
+@media handheld, only screen and (max-width: 767px) {
+
+  #orbitDemo { height: 165px; }
+  #orbitDemo.orbit { height: auto; }
+
+  dl.nice.tabs.mobile { margin-bottom: 0px; }
+  .nice.tabs.mobile dd a { padding: 12px 20px; }
+
+  div.foundation-header h1 { font-size: 32px; font-size: 3.2rem; }
+}
+
+
+
+
+
+/* -----------------------------------------
+   Page Name 2
+----------------------------------------- */
+
+
